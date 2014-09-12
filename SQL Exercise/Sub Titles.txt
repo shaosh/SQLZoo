@@ -1,0 +1,9 @@
+https://github.com/mrdziuban/SQLZoo/blob/master/4_select_within_select.sql
+
+http://sqlzoo.net/wiki/WHERE_filters
+http://sqlzoo.net/wiki/Using_nested_SELECT
+http://sqlzoo.net/w/index.php/SELECT_.._SELECT
+http://sqlzoo.net/wiki/Using_SUM,_Count,_MAX,_DISTINCT_and_ORDER_BY
+http://sqlzoo.net/wiki/Using_GROUP_BY_and_HAVING.
+http://sqlzoo.net/wiki/The_nobel_table_can_be_used_to_practice_more_SUM_and_COUNT_functions.
+http://sqlzoo.net/wiki/Aggregates_with_DISTINCT
