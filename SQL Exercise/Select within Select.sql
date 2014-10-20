@@ -50,11 +50,12 @@ SELECT name FROM world
 //6.
 //Find the largest country (by area) in each continent, show the continent, the name and the area:
 //Use AS to refer outer SELECT and inner SELECT
-SELECT a.continent, a.name, a.area FROM world AS a
-	WHERE a.area >= ALL(
-		SELECT b.area FROM world AS b
-			WHERE b.continent = a.continent
-	)
+SELECT x.continent, x.name, x.area
+FROM world AS x
+WHERE x.area = (
+  SELECT MAX(y.area)
+  FROM world AS y
+  WHERE x.continent = y.continent)
 
 //7.
 //Find each country that belongs to a continent where all populations are less than 25000000. Show name, continent and population.
