@@ -75,6 +75,10 @@ SELECT yr, COUNT(title) FROM movie
 		WHERE name = 'John Travolta')
 	GROUP BY yr
 	HAVING COUNT(title) > 2
+	
+//Another solution
+select yr, count(title) from casting join actor on actorid = actor.id join movie on movieid=movie.id where name = 'John Travolta' group by yr having count(title) >2 
+
 //Show the max year
 SELECT yr, COUNT(title) FROM movie 
 	WHERE movie.id in (
