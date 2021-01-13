@@ -72,8 +72,8 @@ SELECT stadium, COUNT(*) FROM
 SELECT matchid, mdate, COUNT(*) FROM
 	game JOIN goal ON (id = matchid)
 	WHERE team1 = 'POL' OR team2 = 'POL'
-	GROUP BY matchid
-
+	GROUP BY matchid, mdate 
+	
 //12. For every match where 'GER' scored, show matchid, match date and the number of goals scored by 'GER'
 SELECT matchid, mdate, COUNT(*) FROM
 	game JOIN goal ON (id = matchid)
